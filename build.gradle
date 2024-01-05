@@ -1,0 +1,19 @@
+plugins {
+    id 'io.micronaut.library' version '4.2.1'
+}
+
+version "0.1"
+group "com.example"
+
+repositories {
+    mavenCentral()
+}
+
+micronaut {
+    version = "4.2.0"
+}
+
+dependencies {
+    testImplementation("io.micronaut.test:micronaut-test-junit5")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
+}
